@@ -21,19 +21,17 @@ Playwright docs mention two ways of installing Playwright browsers in CI:
 
 Installing Playwright browsers with [`playwright install --with-deps`](https://playwright.dev/docs/ci#on-pushpull_request) can lead to long installation times (can be multiple minutes to install dependencies):
 
-- Install dependencies: 1m02s
-- Total: 1m17s
+- Install dependencies: 2m24s
+- Total: 2m42s
 
-<img width="1445" height="814" alt="Screenshot 2025-09-29 at 14 45 18" src="https://github.com/user-attachments/assets/ef8676eb-bd89-43cc-ba74-be7517200b2d" />
+TODO
 
 Running Playwright [via container](https://playwright.dev/docs/ci#via-containers) (using [the official Microsoft Docker image](https://hub.docker.com/r/microsoft/playwright)) is faster:
 
 - Initialize Docker container: 25s
-- Total: 53s
+- Total: 50s
 
-<img width="1437" height="686" alt="Screenshot 2025-09-29 at 14 45 47" src="https://github.com/user-attachments/assets/1c2a5372-8152-4a8e-8c90-6c738509492f" />
-
-<img width="1438" height="851" alt="Screenshot 2025-09-29 at 14 46 09" src="https://github.com/user-attachments/assets/398b3e00-b86b-480d-820d-a78015f44179" />
+TODO
 
 However, the Docker container approach hardcodes the Playwright version in another place in the codebase - the GitHub Actions workflow files - requiring effort or automation to keep the Playwright version in `package.json` and the Docker image version in sync (high chance of getting out of sync as Playwright is upgraded).
 

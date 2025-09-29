@@ -35,6 +35,6 @@ Running Playwright [via container](https://playwright.dev/docs/ci#via-containers
 
 <img width="1443" height="840" alt="Screenshot 2025-09-29 at 15 38 02" src="https://github.com/user-attachments/assets/b6ea3817-2758-4de9-8ae7-9657fa31dea1" /><br /><br />
 
-However, the Docker container approach hardcodes the Playwright version in another place in the codebase - the GitHub Actions workflow files - requiring effort or automation to keep the Playwright version in `package.json` and the Docker image version in sync (high chance of getting out of sync as Playwright is upgraded).
+However, the Docker container approach hardcodes the Playwright version in a new place in the codebase - the GitHub Actions workflow files - requiring effort or automation to keep the Playwright versions in sync in both `package.json` and the GitHub Actions workflow files. There is a high chance of these versions getting out of sync as Playwright is upgraded.
 
 This reproduction treats the version in `package.json` as the single source of truth and uses it to dynamically set the Docker image version in the GitHub Actions workflow.

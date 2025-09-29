@@ -1,4 +1,4 @@
-name: CI
+name: CI - Container
 on: [push]
 jobs:
   resolve-playwright-version:

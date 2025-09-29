@@ -19,7 +19,7 @@ jobs:
     needs: resolve-playwright-version
     timeout-minutes: 15
     container:
-      image: mcr.microsoft.com/playwright:v${{ needs['resolve-playwright-version'].outputs.version }}-noble
+      image: mcr.microsoft.com/playwright:v${{ needs['resolve-playwright-version'].outputs.version }}
       options: --user 1001
     steps:
       - uses: actions/checkout@v5

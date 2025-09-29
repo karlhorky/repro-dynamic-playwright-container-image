@@ -26,7 +26,7 @@ Installing Playwright browsers with [`playwright install --with-deps`](https://p
 
 <img width="1437" height="842" alt="Screenshot 2025-09-29 at 15 37 27" src="https://github.com/user-attachments/assets/df2d6887-1678-4de9-879e-f75348e063a7" /><br /><br />
 
-Running Playwright [via container](https://playwright.dev/docs/ci#via-containers) (using [the official Microsoft Docker image](https://mcr.microsoft.com/en-us/artifact/mar/playwright/tags)) is faster:
+Running Playwright [via container](https://playwright.dev/docs/ci#via-containers) (using [the official Microsoft Docker image](https://playwright.dev/docs/docker)) is faster:
 
 - Initialize Docker container: 25s
 - Total: 50s

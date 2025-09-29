@@ -2,14 +2,14 @@
   "name": "repro-dynamic-playwright-container-image",
   "version": "1.0.0",
   "description": "",
+  "keywords": [],
+  "license": "ISC",
+  "author": "Karl Horky",
   "main": "index.js",
   "scripts": {},
-  "keywords": [],
-  "author": "Karl Horky",
-  "license": "ISC",
-  "packageManager": "pnpm@10.17.1",
   "devDependencies": {
-    "@playwright/test": "^1.55.0",
+    "@playwright/test": "1.55.0",
     "@types/node": "^24.5.2"
-  }
+  },
+  "packageManager": "pnpm@10.17.1"
 }
